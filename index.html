@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b63d6" />
+  <title>Stephen Joseph — Drilling Engineering Specialist</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Stephen Joseph</h1>
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn" title="LinkedIn">in</a>
+        <a href="#" aria-label="Email" title="Email">@</a>
+      </div>
+      <nav>
+        <div class="nav-controls">
+          <button id="menuToggle" aria-label="Toggle menu">☰</button>
+        </div>
+        <ul id="navList" class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="theme-item"><button id="themeToggle" class="btn" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <h2>Stephen Joseph</h2>
+          <p class="lead">Drilling engineering specialist with 25+ years of experience in drilling, workover and completions, with strong expertise in rigless well intervention.</p>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-card">
+          <h4>Quick facts</h4>
+          <ul>
+            <li>25+ years: drilling, workover, completions</li>
+            <li>Rigless well intervention specialist</li>
+            <li>Operations leadership & field engineering</li>
+          </ul>
+          <div class="hero-image">
+            <img src="images/rig.svg" alt="Drilling rig site illustration" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About</h3>
+      <p>I'm Stephen Joseph, a drilling engineering specialist focusing on safe, efficient drilling and well intervention operations. I work across onshore and offshore environments and have led teams on complex workover and completion projects.</p>
+    </section>
+
+    <section id="experience" class="container features">
+      <h3>Experience highlights</h3>
+      <div class="card-grid">
+        <article class="card">
+          <h4>Drilling Operations</h4>
+          <p>Planning and executing drilling campaigns, risk assessments, and operational optimization.</p>
+        </article>
+        <article class="card">
+          <h4>Workover & Completions</h4>
+          <p>Design and supervise well workover and completion activities to restore or enhance production.</p>
+        </article>
+        <article class="card">
+          <h4>Rigless Interventions</h4>
+          <p>Rigless intervention strategies to reduce cost and downtime while maintaining safety.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="testimonials" class="container testimonials">
+      <h3>What clients say</h3>
+      <div class="test-grid">
+        <blockquote class="testimonial reveal">
+          <p>"Stephen provided pragmatic solutions that reduced downtime significantly — exceptional field leadership."</p>
+          <cite>— Operations Manager, Offshore</cite>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <p>"A reliable specialist who brings deep technical insight and clear communication on complex jobs."</p>
+          <cite>— Project Lead, Onshore</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p>If you'd like to connect, please send a message below. This form will open your email client as a fallback if no external form endpoint is configured.</p>
+      <form id="contactForm" method="post" data-action="">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" placeholder="+234 800 000 0000" />
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="">Select country</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="United States">United States</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="Saudi Arabia">Saudi Arabia</option>
+          <option value="UAE">UAE</option>
+          <option value="Norway">Norway</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="industry">Industry sector</label>
+        <select id="industry" name="industry">
+          <option value="">Select industry</option>
+          <option>Oil & Gas</option>
+          <option>Energy Services</option>
+          <option>Renewables</option>
+          <option>Petrochemicals</option>
+          <option>Consulting</option>
+          <option>Other</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-contact">Send message</button>
+          <div id="formStatus" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+
+    <section class="container cta reveal">
+      <div class="cta-inner">
+        <div>
+          <h3>Looking to reduce operational downtime?</h3>
+          <p>Contact me for a free 15-minute consultation to discuss your well intervention and completion challenges.</p>
+        </div>
+        <div>
+          <a href="#contact" class="btn">Schedule a chat</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Stephen Joseph</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
